@@ -1,0 +1,1 @@
+Simply run `python main.py` and experience Cherry finding skills beyond your comprehension

@@ -114,6 +114,11 @@ def cherry_file_generator(alphabet,gen_size)->str:
     new_file = ''.join([alphabet[random.randint(0,len(alphabet)-1)] for _ in range(gen_size)])
     splice_loc = random.randint(0,gen_size-7)
     return new_file[0:splice_loc] + 'CHERRY' + new_file[splice_loc:-6]
+
+
+def binary_mask(target, file):
+    def to_binary(w):
+        return w.encode('ascii')
 from time import time
 print("Method 1: REGEX")
 t = time()
@@ -143,4 +148,4 @@ print("Method 4: Word")
 print("See file att")
 
 input("Next")
-print("Method 5: ")
+print("Theres only 4 cherrys! Paul has lied to us. Thus I have only provided 4 methods")
